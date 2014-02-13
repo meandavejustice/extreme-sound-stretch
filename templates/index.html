@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.1/pure-min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">  
+</head>
+<body>
+  <div class="contain">
+    <div class="pure-g">
+    <div class="pure-u-16-24">
+      <header>
+        <h1>Welcome to meandave's extreme sound stretch</h1>
+        <aside>adapted from paul nasca's extreme sound stretch</aside>
+      </header>
+      <p>To get started, just upload a WAV file and set the  <a href="javascript:void(0)">WINDOW SIZE</a> and <a href="javascript:void(0)">STRETCH AMOUNT</a></p>
+      <form class="pure-form pure-form-aligned">
+        <fieldset>
+          <div class="pure-control-group">
+            <label for="file">Upload Audio File</label>
+            <input type="file" name="file">
+          </div>
+
+          <div class="pure-control-group">
+            <label for="window">Window Size (^ for more reverb | v for crisper sound)</label>
+            <input type="text" name="window" value="1.2" placeholder="window size (defaults to 8.0)">
+          </div>
+          
+          <div class="pure-control-group">
+            <label for="stretch">Stretch Amount (1.0 is current speed)</label>
+            <input type="text" name="stretch" value="1.5" placeholder="stretch (defaults to 0.25)">
+          </div>
+
+          <div class="pure-controls">
+            <button type="submit" class="pure-button submit">Upload File</button>
+            <progress max="100" value="0" style="display:none;"></progress>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="pure-u-16-24">
+    <section class="player">
+      <span class="complete">READY TO PLAY!</span>
+      <button class="start">Start</button>
+      <button class="stop">Stop</button>
+    </section>
+    </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
