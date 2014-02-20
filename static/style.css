@@ -11,3 +11,7 @@
 .complete {
   padding: 20px;
 }
+
+.help {
+  cursor: help;
+}
