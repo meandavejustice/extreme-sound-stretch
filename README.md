@@ -9,11 +9,11 @@ Which is released under Public Domain, more info on Public Domain [here](http://
 
 
 ## Development
-* `brew install beanstalkd` or `apt-get install beanstalkd`
-* get into a virtualenv (if you don't know what this is I recommend [Virtualenv Burrito](https://github.com/brainsik/virtualenv-burrito))
-* `pip install -r requirements.txt` (if you have trouble getting numpy and scipy installed you can install with the [SciPySuperpack](http://fonnesbeck.github.io/ScipySuperpack/))
+* `apt-get install beanstalkd scipy numpy`
+* `mkvirtualenv --system-site-packages extreme`
+* `pip install -r requirements.txt`
 * `beanstalkd -l 127.0.0.1 -p 14711 &`
-* `python worker.py`
+* `python worker.py &`
 * `python main.py`
 * `open localhost:5000`
 

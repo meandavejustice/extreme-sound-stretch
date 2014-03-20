@@ -2,6 +2,4 @@ Flask==0.10.1
 Werkzeug==0.9.4
 beanstalkc==0.3.0
 pydub==0.8.3
-numpy==1.9.0.dev-0f7dffa
-scipy==0.14.0.dev-8ad48cd
 PyYAML==3.10
