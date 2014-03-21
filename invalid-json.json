@@ -1,0 +1,4 @@
+{
+    something: "string without comma"
+    invalid: ["this", "should", "be", "caught"]
+}

@@ -1,0 +1,4 @@
+{
+    something: "string with comma",
+    valid: ["this", "should", "not", "be", "caught"]
+}
