@@ -9,7 +9,7 @@ Which is released under Public Domain, more info on Public Domain [here](http://
 
 
 ## Development
-* `apt-get install beanstalkd scipy numpy`
+* `apt-get install beanstalkd ffmpeg scipy numpy`
 * `mkvirtualenv --system-site-packages extreme`
 * `pip install -r requirements.txt`
 * `beanstalkd -l 127.0.0.1 -p 14711 &`
