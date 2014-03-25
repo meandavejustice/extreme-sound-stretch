@@ -66,6 +66,7 @@ function playSound() {
 
 function initSound(arrayBuffer) {
   context.decodeAudioData(arrayBuffer, function(buffer) {
+    clearInterval(pollInterval); // clear Interval on success.
     // audioBuffer is global to reuse the decoded audio later.
     audioBuffer = buffer;
     document.getElementsByClassName('player')[0].style.display = 'block'
@@ -77,7 +78,6 @@ function initSound(arrayBuffer) {
 // Load file from a URL as an ArrayBuffer.
 // Example: loading via xhr2: loadSoundFile('sounds/test.mp3');
 function loadSoundFile(url) {
-  pollInterval = null;
   var xhr = new XMLHttpRequest();
   xhr.open('GET', url, true);
   xhr.responseType = 'arraybuffer';

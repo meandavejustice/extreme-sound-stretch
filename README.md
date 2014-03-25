@@ -21,12 +21,17 @@ There are a couple of audio files you can play with in `/examples/`
 
 ## TODOS
 * add download option.
-* functionality to delete a song within half an hour.(cron job)
-* add an audio analyzer to player
-* get nginx serving static and downloads
+* functionality to delete a song
+within half an hour.(cron job)(heartbeat tasks)
+* add an audio analyzer to player(would be nice to visualize difference in waves)
+* get nginx serving static files
 * add bower for pure dependency(currently using the cdn)
 * add drag n drop support for files
-* remove jQuery (currently only being used for parsing file from form, which will be unneccessary after writing the drag n drop handler)
-* add file viewer/player for recently uploaded files(similiar to [slskr](https://github.com/meandavejustice/slskr))
-* create dockerfile
-* deploy that bad boy
+* remove jQuery (currently only being used for parsing file from
+form, which will be unneccessary after writing the drag n drop
+handler)
+* add file viewer/player for recently uploaded files(similiar
+to [slskr](https://github.com/meandavejustice/slskr))
+* better transparency for Which file you are actually about to play, we should
+display the truncated filename as a part of the player, and reset the
+loading bar after initializing a new upload.
