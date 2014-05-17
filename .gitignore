@@ -36,3 +36,4 @@ nosetests.xml
 .pydevproject
 
 install_superpack.sh
+uploads/*
