@@ -29,9 +29,6 @@ def stretch_it(job):
     # Stretch it!
     subprocess.call(["python", "./utils/paulstretch_stereo.py", window,
                      stretch, wav_name, finished_name])
-    # I need to actually pass paulstretch a "processing name" then rename the file
-    # to the finished name here. Also, maybe a more readable uniq identifier would
-    # be nice, since we are going to be exposing it to the front end.
     job.delete()
 
 

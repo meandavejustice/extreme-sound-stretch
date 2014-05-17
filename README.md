@@ -12,12 +12,17 @@ Which is released under Public Domain, more info on Public Domain [here](http://
 * `apt-get install beanstalkd ffmpeg scipy numpy`
 * `mkvirtualenv --system-site-packages extreme`
 * `pip install -r requirements.txt`
+* `make start`
+* `open localhost:5000`
+
+If you don't want to use make, you can just run the following commands
 * `beanstalkd -l 127.0.0.1 -p 14711 &`
 * `python worker.py &`
 * `python main.py`
-* `open localhost:5000`
 
-There are a couple of audio files you can play with in `/examples/`
+`make clean` removes all uploaded files
+
+There are a couple of audio files you can play with in `examples/`
 
 ## TODOS
 * add download option.
